@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Quiz</title>
+  <!-- Add your CSS styles here -->
+</head>
+<body>
+
+<button id="startBtn">Start Quiz</button>
+<div id="timer">Timer: 60s</div>
+<div id="question">Question: What is 2 + 2?</div>
+<div id="answers">
+  <input type="radio" name="answer" value="a"> A. 3
+  <input type="radio" name="answer" value="b"> B. 4
+  <input type="radio" name="answer" value="c"> C. 5
+</div>
+<button id="submitBtn">Submit Answer</button>
+<div id="gameOver" style="display: none;">
+  <p>Game Over!</p>
+  <p>Your Score: <span id="score"></span></p>
+  <label for="initials">Enter Initials:</label>
+  <input type="text" id="initials">
+  <button id="saveBtn">Save Score</button>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="quiz.js"></script>
+</body>
+</html>
